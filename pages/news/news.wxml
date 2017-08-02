@@ -1,0 +1,30 @@
+<view>
+    <swiper autoplay="true" indicator-dots="true" interval="4000" indicator-color="rgba(200,200,200,.3)">
+        <swiper-item>
+            <image src="/images/news/wx.png"></image>
+        </swiper-item>
+        <swiper-item>
+             <image src="/images/news/vr.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/news/iqiyi.png"></image>
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{news_key}}" wx:for-item="item">
+        <view class="news-content">
+            <view class="author-date">
+                <image class="author" src="{{item.author_img}}"></image>
+                <text class="date">{{item.data}}</text>
+            </view>
+            <text class="title">{{item.title}}</text>
+            <image class="pic" src="{{item.news_img}}"></image>
+            <text class="content">{{item.content}}</text>
+            <view class="like">
+                <image class="like-pic" src="/images/icon/chat.png"></image>
+                <text class="like-font">{{item.view_num}}</text>
+                <image class="like-pic" src="/images/icon/view.png"></image>
+                <text class="like-font">{{item.collect_num}}</text>
+            </view>
+        </view>
+    </block>
+</view>

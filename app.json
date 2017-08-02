@@ -1,0 +1,9 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/news/news"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#b3d4db"
+  }
+}

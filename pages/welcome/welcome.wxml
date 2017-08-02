@@ -1,0 +1,7 @@
+<view class="conter">
+    <image class="avaterpic" src="/images/avater/avater.png"></image>
+    <text class="username">Hello 幸福了，然后呢</text>
+    <view class="starbox" bindtap="onTap">
+        <text class="userstar">开启小程序之旅</text>
+    </view>
+</view>
